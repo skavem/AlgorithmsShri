@@ -10,7 +10,17 @@
  */
 
 export function bfs(tree) {
-    const result = [];
+  const stack = [tree];
+  const result = [];
 
-    return result;
+  while (stack.length > 0) {
+    const node = stack.pop();
+
+    result.push(node.val);
+
+    node.left && stack.unshift(node.left);
+    node.right && stack.unshift(node.right);
+  }
+
+  return result;
 }
