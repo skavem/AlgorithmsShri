@@ -2,7 +2,6 @@
 
 export function primeNumbers(num) {
   const result = [2];
-  const sqrt = Math.sqrt(num) | 0;
 
   const visited = new Set();
 
