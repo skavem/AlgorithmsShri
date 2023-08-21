@@ -11,5 +11,17 @@
  */
 
 export function dfs(tree) {
+  const stack = [tree];
+  const result = [];
 
+  while (stack.length > 0) {
+    const node = stack.pop();
+
+    result.push(node.val);
+
+    node.right && stack.push(node.right);
+    node.left && stack.push(node.left);
+  }
+
+  return result;
 }
