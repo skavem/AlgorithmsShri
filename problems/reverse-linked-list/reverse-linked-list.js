@@ -9,5 +9,19 @@
  */
 
 export function reverseList(head) {
+  let cur = head;
+  let next = cur.next;
+  let nextNext = next.next;
+  head.next = null
 
+  while (nextNext !== null) {
+    next.next = cur;
+    
+    cur = next;
+    next = nextNext;
+    nextNext = next.next;
+  }
+
+  next.next = cur
+  return next
 }
