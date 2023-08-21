@@ -3,4 +3,6 @@
 В корневой папке один раз выолнить `npm i`
 
 Чтобы запустить тест задачи пишем: `npm run test <название папки>`:
-`npm run test bubble-sort`
+```
+npm run test bubble-sort
+```
