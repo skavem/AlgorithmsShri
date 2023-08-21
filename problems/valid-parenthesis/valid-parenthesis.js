@@ -24,5 +24,5 @@ export function isValid(str) {
     }
   }
 
-  return true
+  return stack.length === 0
 }
