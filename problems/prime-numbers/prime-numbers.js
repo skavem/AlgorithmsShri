@@ -1,7 +1,7 @@
 // https://ru.wikipedia.org/wiki/Решето_Эратосфена
 
 export function primeNumbers(num) {
-  const result = [2];
+  const result = [];
 
   const visited = new Set();
 
